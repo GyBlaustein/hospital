@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Vida Plena | Agendamento de Consultas & Centro Médico</title>
+  <meta name="description" content="Agende, consulte, altere ou cancele sua consulta na Clínica Vida Plena de forma simples, rápida e 100% online.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <!-- LADO ESQUERDO: Logo -->
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true"></span>
+        Clínica Vida Plena
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="index.html" aria-current="page">Início</a>
+        <a href="post.html">Agendar consulta</a>
+        <a href="put.html">Alterar dados</a>
+        <a href="delete.html">Cancelar consulta</a>
+        <a href="get.html">Consultar agendamento</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO PRINCIPAL -->
+    <div class="hero">
+      <div class="hero-content">
+        <span style="color: var(--primary-dark); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">
+          Portal do Paciente
+        </span>
+        <h1>Realize suas consultas com conforto e segurança</h1>
+        <p>Agende, visualize e gerencie suas consultas de forma simples e rápida, sem sair de casa. A Clínica Vida Plena oferece atendimento em diversas especialidades, corpo médico altamente qualificado, horários flexíveis e agendamento 100% online.</p>
+
+        <!-- Destaques do Serviço -->
+        <div style="display: flex; gap: 16px; margin: 8px 0; font-size: 0.85rem; color: var(--navy); font-weight: 600;">
+          <span>Confirmação Imediata</span>
+          <span>Atendimento Humanizado</span>
+        </div>
+
+        <div class="btn-group">
+          <a href="post.html" class="btn">Agendar nova consulta</a>
+          <a href="get.html" class="btn secondary">Consultar agendamento</a>
+          <a href="put.html" class="btn secondary">Alterar dados</a>
+          <a href="delete.html" class="btn danger">Cancelar consulta</a>
+        </div>
+      </div>
+
+      <!-- Imagem do Hero -->
+      <div class="hero-image hero-placeholder" role="img" aria-label="Ilustração representando a Clínica Vida Plena">
+        <span>Clínica Vida Plena</span>
+      </div>
+    </div>
+
+    <!-- SEÇÃO DE INFORMAÇÕES ADICIONAIS / CARDS -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 48px;">
+      
+      <!-- HORÁRIO DE ATENDIMENTO -->
+      <div class="card">
+        <h2>Horário de atendimento</h2>
+        <p>Confira nossos horários de funcionamento para consultas presenciais, exames de rotina e atendimento online:</p>
+        
+        <ul style="list-style: none; padding: 0; margin: 16px 0 0;">
+          <li style="padding: 10px 0; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between;">
+            <span>Segunda a Sexta:</span>
+            <strong>8h às 18h</strong>
+          </li>
+          <li style="padding: 10px 0; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between;">
+            <span>Sábado:</span>
+            <strong>8h às 12h</strong>
+          </li>
+          <li style="padding: 10px 0; display: flex; justify-content: space-between; color: var(--muted);">
+            <span>Domingos e Feriados:</span>
+            <span>Fechado</span>
+          </li>
+        </ul>
+        <span class="hint" style="display: block; margin-top: 12px;">* Para exames laboratoriais, a coleta é feita até as 11h.</span>
+      </div>
+
+      <!-- CONTATO E LOCALIZAÇÃO -->
+      <div class="card">
+        <h2>Contato e Localização</h2>
+        <p>Estamos localizados em uma região de fácil acesso com estacionamento no local:</p>
+
+        <ul style="list-style: none; padding: 0; margin: 16px 0 0;">
+          <li style="padding: 8px 0;">
+            <strong>Telefone:</strong> (11) 4000-0000
+          </li>
+          <li style="padding: 8px 0;">
+            <strong>WhatsApp:</strong> (11) 99999-0000
+          </li>
+          <li style="padding: 8px 0;">
+            <strong>E-mail:</strong> contato@vidaplena.com.br
+          </li>
+          <li style="padding: 8px 0;">
+            <strong>Endereço:</strong> Av. do Bem-Estar, 123 - São Paulo/SP
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div style="max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; text-align: left; padding-bottom: 24px; border-bottom: 1px solid var(--line);">
+      <div style="max-width: 380px;">
+        <p style="font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; color: var(--navy); margin-bottom: 8px;">Clínica Vida Plena</p>
+        <p style="font-size: 0.85rem;">Cuidando da sua saúde com excelência, respeito e carinho. Atendimento humanizado e especialistas em diversas áreas médicas.</p>
+      </div>
+
+      <div>
+        <p style="font-weight: 700; color: var(--navy); margin-bottom: 8px;">Links Rápidos</p>
+        <p style="font-size: 0.85rem; margin: 4px 0;"><a href="post.html">Agendar Nova Consulta</a></p>
+        <p style="font-size: 0.85rem; margin: 4px 0;"><a href="get.html">Consultar Agendamento</a></p>
+        <p style="font-size: 0.85rem; margin: 4px 0;"><a href="put.html">Alterar Dados Cadastrais</a></p>
+        <p style="font-size: 0.85rem; margin: 4px 0;"><a href="delete.html">Cancelar Consulta</a></p>
+      </div>
+
+      <div>
+        <p style="font-weight: 700; color: var(--navy); margin-bottom: 8px;">Responsabilidade Técnica</p>
+        <p style="font-size: 0.8rem; color: var(--muted); max-width: 300px;">
+          
+          Diretor Médico Responsável<br>
+          Em caso de emergência grave, procure um Pronto-Socorro imediato.
+        </p>
+      </div>
+    </div>
+
+    <p style="margin-top: 20px; font-size: 0.82rem;">&copy; 2026 Clínica Vida Plena - Seu cuidado começa aqui. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

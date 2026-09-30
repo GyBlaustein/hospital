@@ -1,0 +1,49 @@
+{
+  "consultas": [
+    {
+      "id": "1",
+      "nomePaciente": "Maria Oliveira",
+      "dataNascimento": "1990-04-12",
+      "cartaoPlano": "8834221100",
+      "telefone": "11988887777",
+      "motivoConsulta": "Consulta de rotina",
+      "dataDesejada": "2026-10-02",
+      "horarioDesejado": "09:30",
+      "informacoesAdicionais": "Prefere atendimento pela manhã."
+    },
+    {
+      "id": "2",
+      "nomePaciente": "João Silva",
+      "dataNascimento": "1985-11-30",
+      "cartaoPlano": "",
+      "telefone": "11991234567",
+      "motivoConsulta": "Retorno",
+      "dataDesejada": "2026-10-05",
+      "horarioDesejado": "14:00",
+      "informacoesAdicionais": "Retorno da consulta anterior sobre dor lombar."
+    },
+    {
+      "nomePaciente": "11988261247",
+      "dataNascimento": "2000-10-01",
+      "telefone": "11988261247",
+      "cartaoPlano": "345678",
+      "motivoConsulta": "Avaliação inicial",
+      "dataDesejada": "2001-01-01",
+      "horarioDesejado": "11:22",
+      "informacoesAdicionais": "dor",
+      "id": "5RhzdeKzUOY"
+    },
+    {
+      "nomePaciente": "gyovanna 1234",
+      "dataNascimento": "2026-09-10",
+      "cartaoPlano": "1234",
+      "telefone": "11988261247",
+      "motivoConsulta": "Retorno",
+      "dataDesejada": "2002-01-11",
+      "horarioDesejado": "22:22",
+      "informacoesAdicionais": "ererwer",
+      "id": "kO0lYXAk5RU"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultar Agendamento | Clínica Vida Plena</title>
+  <meta name="description" content="Consulte o status da sua consulta informando o telefone usado no agendamento.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+  <header class="site-header">
+  <div class="header-inner">
+    <!-- LADO ESQUERDO: Logo -->
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true"></span>
+      Clínica Vida Plena
+    </a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="post.html">Agendar consulta</a>
+        <a href="put.html">Alterar dados</a>
+        <a href="delete.html">Cancelar consulta</a>
+        <a href="get.html" aria-current="page">Consultar agendamento</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <div class="page-intro">
+      <h1>Consultar Agendamento</h1>
+      <p>Por segurança, mostramos apenas os agendamentos vinculados ao telefone informado.</p>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <label for="identificadorBusca">Telefone</label>
+        <input type="tel" id="identificadorBusca" placeholder="(11) 91234-5678" required>
+
+        <div class="form-actions">
+          <button type="button" class="btn-buscar" onclick="buscarAgendamentos()">Buscar meus agendamentos</button>
+        </div>
+
+        <div id="mensagem" class="mensagem" role="status" aria-live="polite"></div>
+      </div>
+    </div>
+
+    <div id="tabela-container" style="margin-top: 20px; display: none;">
+      <table aria-label="Resultados da busca de agendamentos">
+        <thead>
+          <tr>
+            <th scope="col">Paciente</th>
+            <th scope="col">Nascimento</th>
+            <th scope="col">Cartão do plano</th>
+            <th scope="col">Telefone</th>
+            <th scope="col">Motivo</th>
+            <th scope="col">Data desejada</th>
+            <th scope="col">Horário</th>
+            <th scope="col">Observações</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-corpo">
+        </tbody>
+      </table>
+    </div>
+
+    <p style="text-align:center;"><a href="index.html" class="btn secondary">Voltar para a página inicial</a></p>
+  </main>
+
+  <footer>
+    <p>Clínica Vida Plena - Seu cuidado começa aqui.</p>
+  </footer>
+
+  <script src="get.js"></script>
+</body>
+</html>

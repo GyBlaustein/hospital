@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Consulta | Clínica Vida Plena</title>
+    <meta name="description" content="Preencha o formulário para agendar sua consulta na Clínica Vida Plena.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+  <header class="site-header">
+  <div class="header-inner">
+    <!-- LADO ESQUERDO: Logo -->
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true"></span>
+      Clínica Vida Plena
+    </a>
+
+    <!-- LADO DIREITO: Menu de Navegação -->
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="index.html" >Início</a>
+      <a href="post.html" aria-current="page">Agendar consulta</a>
+      <a href="put.html">Alterar dados</a>
+      <a href="delete.html">Cancelar consulta</a>
+      <a href="get.html">Consultar agendamento</a>
+    </nav>
+  </div>
+</header>
+
+    <main id="conteudo">
+      <div class="container">
+        <div class="page-intro">
+          <h1>Agendamento de Consulta</h1>
+          <p>Preencha os dados abaixo. Todos os campos marcados com * são obrigatórios.</p>
+        </div>
+
+        <div class="card">
+          <form id="form-post" onsubmit="enviarDados(); return false;" novalidate>
+            <fieldset>
+              <legend>Dados do paciente</legend>
+              <div class="form-grid">
+                <div class="field full">
+                  <label for="nomePaciente">Nome do paciente *</label>
+                  <input type="text" id="nomePaciente" name="nomePaciente" autocomplete="name" required>
+                </div>
+
+                <div class="field">
+                  <label for="dataNascimento">Data de nascimento *</label>
+                  <input type="date" id="dataNascimento" name="dataNascimento" autocomplete="bday" required>
+                </div>
+
+                <div class="field">
+                  <label for="telefone">Telefone *</label>
+                  <input type="tel" id="telefone" name="telefone" autocomplete="tel" placeholder="(11) 91234-5678" required>
+                </div>
+
+                <div class="field full">
+                  <label for="cartaoPlano">Número do cartão do plano de saúde</label>
+                  <input type="text" id="cartaoPlano" name="cartaoPlano" placeholder="Deixe em branco se for particular" aria-describedby="cartaoPlanoHint">
+                  <span class="hint" id="cartaoPlanoHint">Não possui plano de saúde? Pode deixar este campo vazio.</span>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Detalhes da consulta</legend>
+              <div class="form-grid">
+                <div class="field full">
+                  <label for="motivoConsulta">Motivo da consulta *</label>
+                  <select id="motivoConsulta" name="motivoConsulta" required>
+                    <option value="" disabled selected>Selecione uma opção</option>
+                    <option value="Consulta de rotina">Consulta de rotina</option>
+                    <option value="Retorno">Retorno</option>
+                    <option value="Avaliação inicial">Avaliação inicial</option>
+                    <option value="Exame">Exame</option>
+                    <option value="Urgência">Urgência</option>
+                    <option value="Outro">Outro</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="dataDesejada">Data desejada *</label>
+                  <input type="date" id="dataDesejada" name="dataDesejada" required>
+                </div>
+
+                <div class="field">
+                  <label for="horarioDesejado">Horário desejado *</label>
+                  <input type="time" id="horarioDesejado" name="horarioDesejado" required>
+                </div>
+
+                <div class="field full">
+                  <label for="informacoesAdicionais">Informações adicionais</label>
+                  <textarea id="informacoesAdicionais" name="informacoesAdicionais" placeholder="Sintomas, preferências de horário, observações..."></textarea>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="form-actions">
+              <button type="submit">Confirmar agendamento</button>
+            </div>
+
+            <div id="mensagem" class="mensagem" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <p style="text-align:center;"><a href="index.html" class="btn secondary">Voltar para a página inicial</a></p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>Clínica Vida Plena · Seu cuidado começa aqui.</p>
+    </footer>
+
+    <script src="post.js"></script>
+</body>
+</html>

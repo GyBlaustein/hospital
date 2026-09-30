@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancelar Consulta | Clínica Vida Plena</title>
+    <meta name="description" content="Cancele um agendamento informando o telefone utilizado na marcação.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+    <header  class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true"></span>
+      Clínica Vida Plena
+    </a>
+        <nav class="main-nav" aria-label="Navegação principal">
+          <a href="index.html">Início</a>
+          <a href="post.html">Agendar consulta</a>
+          <a href="put.html">Alterar dados</a>
+          <a href="delete.html" aria-current="page">Cancelar consulta</a>
+          <a href="get.html">Consultar agendamento</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <div class="container">
+        <div class="page-intro">
+          <h1>Cancelar Consulta</h1>
+          <p>Informe o telefone usado no agendamento para excluí-lo.</p>
+        </div>
+
+        <div class="card">
+          <label for="identificadorTelefone">Telefone</label>
+          <input type="tel" id="identificadorTelefone" placeholder="(11) 91234-5678">
+
+          <div class="form-actions">
+            <button type="button" class="danger" onclick="deletarDados()">Cancelar consulta</button>
+          </div>
+
+          <div id="mensagem" class="mensagem" role="status" aria-live="polite"></div>
+        </div>
+
+        <p style="text-align:center;"><a href="index.html" class="btn secondary">Voltar</a></p>
+      </div>
+    </main>
+
+    <footer>
+      <p>Clínica Vida Plena - Seu cuidado começa aqui.</p>
+    </footer>
+
+    <script src="delete.js"></script>
+</body>
+</html>
